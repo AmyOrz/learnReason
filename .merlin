@@ -1,0 +1,15 @@
+####{BSB GENERATED: NO EDIT
+B lib/bs
+FLG -open WonderReasonTest
+FLG -ppx /home/atvin/arvin/learnReason/node_modules/bs-platform/bin/bsppx.exe
+S /home/atvin/arvin/learnReason/node_modules/bs-platform/lib/ocaml
+B /home/atvin/arvin/learnReason/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib -no-alias-deps -color always
+FLG -w -40+6+7+27+32..39+44+45
+S /home/atvin/arvin/learnReason/node_modules/bs-jest/lib/ocaml
+B /home/atvin/arvin/learnReason/node_modules/bs-jest/lib/ocaml
+S test
+B lib/bs/test
+S src
+B lib/bs/src
+####BSB GENERATED: NO EDIT}
