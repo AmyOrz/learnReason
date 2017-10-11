@@ -12,4 +12,6 @@ S test
 B lib/bs/test
 S src
 B lib/bs/src
+S src/base
+B lib/bs/src/base
 ####BSB GENERATED: NO EDIT}

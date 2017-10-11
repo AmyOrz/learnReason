@@ -2,7 +2,8 @@
   "name": "wonder-reason-test",
   "sources": [
     {
-      "dir": "src"
+      "dir": "src",
+      "subdirs": true
     },
     {
       "dir": "test",
