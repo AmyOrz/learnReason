@@ -14,7 +14,7 @@
     "bs-jest"
   ],
   "package-specs": [
-    "es6"
+    "es6-global"
   ],
   "namespace": true
 }

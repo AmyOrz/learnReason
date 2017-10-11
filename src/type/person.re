@@ -1,4 +1,4 @@
 type person = {
-    age:int,
-    name:string
+  age: int,
+  name: string
 };

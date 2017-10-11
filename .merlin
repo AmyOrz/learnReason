@@ -16,4 +16,6 @@ S src/type
 B lib/bs/src/type
 S src/base
 B lib/bs/src/base
+S src/script
+B lib/bs/src/script
 ####BSB GENERATED: NO EDIT}
