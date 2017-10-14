@@ -10,6 +10,17 @@
       "type": "dev"
     }
   ],
+  "reason": {
+    "react-jsx": 2
+  },
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ],
+  "bs-dependencies": [
+    "reason-react",
+    "bs-director"
+  ],
   "bs-dev-dependencies": [
     "bs-jest"
   ],

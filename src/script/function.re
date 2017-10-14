@@ -38,7 +38,6 @@ Js.log qq;
 /* 使用[@bs]在函数后表示该可以作为高阶函数传入其他函数中运行，不会被curry */
 let getSome = (fun x => x + 1) [@bs];
 
-/* let func = (fun x => x + 1) [@bs]; */
 let mapTest2 f z =>
   {
     let part = f z[@bs];

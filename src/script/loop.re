@@ -10,8 +10,6 @@ for x in xStatr to xEnd {
 
 Js.log sum;
 
-let func = (fun x => x + 1) [@bs];
-
 let rec recur x =>
   if (x == 0) {
     1

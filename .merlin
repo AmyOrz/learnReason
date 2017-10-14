@@ -1,21 +1,30 @@
 ####{BSB GENERATED: NO EDIT
 B lib/bs
 FLG -open WonderReasonTest
-FLG -ppx /home/atvin/arvin/learnReason/node_modules/bs-platform/bin/bsppx.exe
-S /home/atvin/arvin/learnReason/node_modules/bs-platform/lib/ocaml
-B /home/atvin/arvin/learnReason/node_modules/bs-platform/lib/ocaml
+FLG -ppx '/home/arvin/yangHao/learnReason/node_modules/bs-platform/bin/reactjs_jsx_ppx_2.exe'
+FLG -ppx /home/arvin/yangHao/learnReason/node_modules/bs-platform/bin/bsppx.exe
+S /home/arvin/yangHao/learnReason/node_modules/bs-platform/lib/ocaml
+B /home/arvin/yangHao/learnReason/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -no-alias-deps -color always
 FLG -w -40+6+7+27+32..39+44+45
-S /home/atvin/arvin/learnReason/node_modules/bs-jest/lib/ocaml
-B /home/atvin/arvin/learnReason/node_modules/bs-jest/lib/ocaml
+S /home/arvin/yangHao/learnReason/node_modules/reason-react/lib/ocaml
+B /home/arvin/yangHao/learnReason/node_modules/reason-react/lib/ocaml
+S /home/arvin/yangHao/learnReason/node_modules/bs-director/lib/ocaml
+B /home/arvin/yangHao/learnReason/node_modules/bs-director/lib/ocaml
+S /home/arvin/yangHao/learnReason/node_modules/bs-jest/lib/ocaml
+B /home/arvin/yangHao/learnReason/node_modules/bs-jest/lib/ocaml
 S test
 B lib/bs/test
 S src
 B lib/bs/src
-S src/type
-B lib/bs/src/type
-S src/base
-B lib/bs/src/base
 S src/script
 B lib/bs/src/script
+S src/reasonReact
+B lib/bs/src/reasonReact
+S src/reasonReact/async
+B lib/bs/src/reasonReact/async
+S src/base
+B lib/bs/src/base
+S src/base/type
+B lib/bs/src/base/type
 ####BSB GENERATED: NO EDIT}

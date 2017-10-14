@@ -33,8 +33,6 @@ describe "Expect.Operators" (fun () => {
     let stub = stubEmpty(sandbox);
 
     stub();
-
-
     
     /* expect (getCallCount(stub)) = 1; */
 expect (1 + 2) === 3
