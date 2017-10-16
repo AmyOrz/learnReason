@@ -2,6 +2,7 @@ let me: Person.person = {age: 12, name: "arvin"};
 
 let you = {...me, age: me.age + 1};
 
+Js.log you;
 
 type mutablePerson = {
   name: string,

@@ -73,8 +73,9 @@ const plugins = [
 
 var rollup = {
      plugins,
-     entry: './lib/es6_global/src/reasonReact/async/CounterRoot.js',
-     dest: './dist/async.js',
+     entry: './lib/es6_global/src/reasonReact/retainedProp/RetainedPropsRoot.js',
+     dest: './dist/retainedProp.js',
+     moduleName:"amy",
      format: 'iife'
  }
 

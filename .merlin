@@ -21,6 +21,8 @@ S src/script
 B lib/bs/src/script
 S src/reasonReact
 B lib/bs/src/reasonReact
+S src/reasonReact/retainedProp
+B lib/bs/src/reasonReact/retainedProp
 S src/reasonReact/async
 B lib/bs/src/reasonReact/async
 S src/base
