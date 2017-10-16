@@ -9,6 +9,8 @@ FLG -nostdlib -no-alias-deps -color always
 FLG -w -40+6+7+27+32..39+44+45
 S /home/arvin/yangHao/learnReason/node_modules/reason-react/lib/ocaml
 B /home/arvin/yangHao/learnReason/node_modules/reason-react/lib/ocaml
+S /home/arvin/yangHao/learnReason/node_modules/bs-fetch/lib/ocaml
+B /home/arvin/yangHao/learnReason/node_modules/bs-fetch/lib/ocaml
 S /home/arvin/yangHao/learnReason/node_modules/bs-director/lib/ocaml
 B /home/arvin/yangHao/learnReason/node_modules/bs-director/lib/ocaml
 S /home/arvin/yangHao/learnReason/node_modules/bs-jest/lib/ocaml
@@ -25,6 +27,8 @@ S src/reasonReact/retainedProp
 B lib/bs/src/reasonReact/retainedProp
 S src/reasonReact/async
 B lib/bs/src/reasonReact/async
+S src/reasonReact/todoMvc
+B lib/bs/src/reasonReact/todoMvc
 S src/base
 B lib/bs/src/base
 S src/base/type

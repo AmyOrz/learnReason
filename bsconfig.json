@@ -19,6 +19,7 @@
   ],
   "bs-dependencies": [
     "reason-react",
+    "bs-fetch",
     "bs-director"
   ],
   "bs-dev-dependencies": [

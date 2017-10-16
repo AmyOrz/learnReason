@@ -1,5 +1,7 @@
-module Test111 = Test;
+open Fetch;
 
-let a = Test111.b;
+let getUrl = "./src/test.json";
 
-Js.log a;
+let renderImg json => json |> (fun json => json.item);
+
+Js.Promise.(fetch getUrl |> then_ Response.json |> then_ (fun json => renderImg json |> resolve));

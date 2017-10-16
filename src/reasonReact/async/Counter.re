@@ -31,6 +31,6 @@ let make ::name _children => {
     let count = state.count;
     let timesMessage = count == 1 ? "second" : "seconds";
     let greet = {j|hi,$name sepnd $count $timesMessage on this page!|j};
-    <div> <input ref=(handle setInputRef) /> </div>
+    <div> <p> (ReasonReact.stringToElement greet) </p> <input ref=(handle setInputRef) /> </div>
   }
 };
