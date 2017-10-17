@@ -35,4 +35,6 @@ S src/base
 B lib/bs/src/base
 S src/base/type
 B lib/bs/src/base/type
+S src/imgDemo
+B lib/bs/src/imgDemo
 ####BSB GENERATED: NO EDIT}

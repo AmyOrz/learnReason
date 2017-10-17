@@ -13,9 +13,7 @@ external imageElementToJsObj : imageElement => Js.t {..} = "%identity";
 
 external elementToJsObj : Dom.element => Js.t {..} = "%identity";
 
-let url = "./src/test.json";
-
-let createImgDomByUrl url => {
+let createImgAndInsertDom url => {
   let img = createImg document;
   let container = getElementById document "index";
   (imageElementToJsObj img)##src#=url;
@@ -23,11 +21,10 @@ let createImgDomByUrl url => {
 };
 
 let showImg (imgItem: ImgParse.imgItem) =>
-  imgItem |> (fun value => value.media) |> (fun value => value.m) |> createImgDomByUrl;
+  imgItem |> (fun value => value.media) |> (fun value => value.m) |> createImgAndInsertDom;
 
-let getItems (res: ImgParse.imgArr) => res.items;
+let renderImg text => ImgParse.getResult text |> (fun value => value.items) |> Array.iter showImg;
 
-let renderImg text =>
-  ImgParse.getResult text |> (fun value => value.items) |> (fun res => Array.iter showImg res);
+let url = "./src/test.json";
 
 Js.Promise.(fetch url |> then_ Response.text |> then_ (fun text => renderImg text |> resolve));
