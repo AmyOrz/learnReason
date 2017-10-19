@@ -47,3 +47,13 @@ let mapTest2 f z =>
 let aaa = mapTest2 getSome 12;
 
 Js.log aaa;
+
+let text = "  qwefef ef wef";
+
+/* open String;
+trim text; */
+
+Js.String.trim text;
+
+
+let a = List.append [1] [2]

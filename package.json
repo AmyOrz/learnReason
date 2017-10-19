@@ -4,7 +4,7 @@
   "repository": "git@github.com:DreamForeast/Wonder-Reason-Test.git",
   "license": "MIT",
   "scripts": {
-    "watch": "bsb -make-world -w",
+    "watch": "bsb -clean-world -make-world -w",
     "build": "bsb -clean-world -make-world",
     "rollup": "rollup -cw",
     "test": "npm run build && jest --config jest.json",
