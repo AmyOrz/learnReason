@@ -23,6 +23,14 @@ S src
 B lib/bs/src
 S src/script
 B lib/bs/src/script
+S src/reductive
+B lib/bs/src/reductive
+S src/reductive/thunk
+B lib/bs/src/reductive/thunk
+S src/reductive/immutable
+B lib/bs/src/reductive/immutable
+S src/reductive/basic
+B lib/bs/src/reductive/basic
 S src/reasonReact
 B lib/bs/src/reasonReact
 S src/reasonReact/retainedProp

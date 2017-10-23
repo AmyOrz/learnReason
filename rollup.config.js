@@ -73,8 +73,9 @@ const plugins = [
 
 var rollup = {
      plugins,
-     entry: './lib/es6_global/src/reasonReact/retainedProp/RetainedPropsRoot.js',
-     dest: './dist/retainedProp.js',
+    //  entry: './lib/es6_global/src/reasonReact/retainedProp/RetainedPropsRoot.js',
+     entry: './lib/es6_global/src/reductive/basic/basicEntry.js',
+     dest: './dist/basic.js',
      moduleName:"amy",
      format: 'iife'
  }

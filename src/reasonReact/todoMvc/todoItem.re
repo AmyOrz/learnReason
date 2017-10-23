@@ -1,4 +1,4 @@
-/* type todo = {
+type todo = {
   id: string,
   title: string,
   completed: bool
@@ -22,7 +22,7 @@ let setEditFieldRef r {ReasonReact.state: state} => state.editFieldRef := Js.Nul
 
 let make ::todo ::editing ::onDestroy ::onSave ::onEdit ::onToggle ::onCancel _children => {
   let submitHelper state =>
-    switch (String.trim state.editText) {
+    switch (Js.String.trim state.editText) {
     | "" => ReasonReact.SideEffects (fun _self => onDestroy ())
     | nonEmptyValue =>
       ReasonReact.UpdateWithSideEffects
@@ -69,7 +69,7 @@ let make ::todo ::editing ::onDestroy ::onSave ::onEdit ::onToggle ::onCancel _c
       },
     render: fun {state, handle, reduce} => {
       let className =
-        [todo.completed ? "completed" : "", editing ? "editing" : ""] |> String.concat " ";
+        Js.Array.joinWith " " [| todo.completed ? "completed" : "", editing ? "editing" : "" |];
       <li className>
         <div className="view">
           <input
@@ -92,4 +92,4 @@ let make ::todo ::editing ::onDestroy ::onSave ::onEdit ::onToggle ::onCancel _c
       </li>
     }
   }
-}; */
+};

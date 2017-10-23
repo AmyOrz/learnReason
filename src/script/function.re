@@ -38,11 +38,10 @@ Js.log qq;
 /* 使用[@bs]在函数后表示该可以作为高阶函数传入其他函数中运行，不会被curry */
 let getSome = (fun x => x + 1) [@bs];
 
-let mapTest2 f z =>
-  {
-    let part = f z[@bs];
-    part + z
-  };
+let mapTest2 f z => {
+  let part = f z [@bs];
+  part + z
+};
 
 let aaa = mapTest2 getSome 12;
 
@@ -51,9 +50,7 @@ Js.log aaa;
 let text = "  qwefef ef wef";
 
 /* open String;
-trim text; */
-
+   trim text; */
 Js.String.trim text;
 
-
-let a = List.append [1] [2]
+let a = List.append [1] [2];
