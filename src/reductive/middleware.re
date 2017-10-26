@@ -16,12 +16,13 @@ let logger store next action => {
   returnValue
 };
 
+
 /**
  * middleware that listens for a specific action and calls that function.
  * Allows for async actions.
  */
-/* let thunk store next action =>
+let thunk store next action =>
   switch action {
   | ReduxThunk.Thunk func => func store
   | _ => next action
-  }; */
+  };
